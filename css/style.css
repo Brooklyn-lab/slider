@@ -1,0 +1,165 @@
+body {
+  color: #333;
+  background-color: #191919;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.container {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider-reviews {
+  position: relative;
+}
+
+.slider-reviews__title {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+}
+
+.reviews-slide__wrapper {
+  margin-top: 32px;
+  width: 100%;
+}
+
+.reviews-slide__title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.25;
+  color: #df3d3a;
+}
+
+.reviews-slide__text {
+  font-size: 20px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.slider-reviews .swiper-pagination {
+  position: absolute;
+  left: 1070px;
+  bottom: 0;
+  display: flex;
+  width: fit-content;
+}
+
+.slider-reviews .swiper-pagination-bullet {
+  position: relative;
+  font-size: 28px;
+  line-height: 1.25;
+  color: #df3d3a;
+  opacity: 0.2;
+  background: transparent;
+  border: 0 solid;
+  border-radius: 0;
+  width: auto;
+  height: auto;
+}
+
+.slider-reviews .swiper-pagination-bullet:nth-child(-n + 2) {
+  margin-right: 30px;
+}
+
+.slider-reviews .swiper-pagination-bullet:nth-child(-n + 2)::after {
+  position: absolute;
+  content: "";
+  right: -19px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 1px;
+  background-color: #df3d3a;
+}
+
+.slider-reviews .swiper-pagination-bullet-active::after {
+  opacity: 1;
+}
+
+.slider-reviews .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+@media screen and (max-width: 1469px) {
+  iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1470px) {
+  .container {
+    width: 1470px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .slider-reviews__title {
+    position: absolute;
+    left: 1070px;
+    top: 0;
+  }
+
+  .reviews-slide {
+    display: flex;
+  }
+
+  .reviews-slide__wrapper {
+    margin-top: 105px;
+    margin-left: 150px;
+    max-width: 258px;
+  }
+}
