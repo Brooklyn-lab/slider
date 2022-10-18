@@ -166,6 +166,11 @@ section {
     position: absolute;
     left: 1070px;
     top: 0;
+    background: rgba(24, 24, 24, 0.1);
+    border-radius: 3px;
+    padding: 10px;
+    margin: -10px;
+    z-index: 9999;
   }
 
   .reviews-slide {
